@@ -1,0 +1,56 @@
+html, body {
+  margin: 0 10px 0 10px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  max-width: 1700px;
+  border-radius: 10px;
+}
+
+.container div {
+  border-radius: 10px;
+  font-size: 2em;
+}
+
+.header {
+  grid-column: 1/-1;
+  padding: 15px;
+}
+
+.slide {
+  display: grid;
+  padding: 15px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.top-image {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+#carouselExampleControls {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.mydivka {
+  align-items: center;
+}
