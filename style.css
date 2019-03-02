@@ -2,46 +2,43 @@ html, body {
   margin: 0 10px 0 10px;
 }
 
+.content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
 .container {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   max-width: 1700px;
-  border-radius: 10px;
 }
 
-.container div {
-  border-radius: 10px;
-  font-size: 2em;
-}
-
-.header {
-  grid-column: 1/-1;
-  padding: 15px;
-}
-
-.slide {
+.first {
   display: grid;
-  padding: 15px;
+  padding: 25px;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  justify-items: center;
-  align-items: center;
-}
-
-.content {
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: 1fr;
   grid-template-rows: auto;
+  justify-items: center;
 }
 
 .top-image {
   width: 200px;
   height: 200px;
-  border: 1px solid #000;
-  border-radius: 15px;
+  border: 1px double #000;
+  border-radius: 5px;
+}
+
+#grid-im:hover {
+  transform: scale(1.1);
+}
+
+.second {
+  align-items: center;
 }
 
 #carouselExampleControls {
@@ -51,6 +48,27 @@ html, body {
   align-items: center;
 }
 
-.mydivka {
+#second-grid {
+  background-color: #F8F6F5;
+  padding-left: 120px;
+  padding-right: 50px;
+  padding-top: 1px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+#h1-after-header {
+  font-size: 3vw;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.third {
+  display: grid;
+  padding: 15px;
+  grid-gap: 5px;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
   align-items: center;
 }
