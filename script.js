@@ -30,7 +30,7 @@ var resultHTML = interpretator({
       AltText: "Alt"
     },
     {
-      ImageName: "",
+      ImageName: "9",
       AltText: "Alt"
     }
   ]
